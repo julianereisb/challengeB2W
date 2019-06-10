@@ -1,0 +1,15 @@
+// COLORS
+$black: #141414;
+$yellow: #D9B327;
+$off-black: #40404a;
+$gray-light: #EEEFF1;
+
+// GLOBAL VARIABLES
+$primary-color: $yellow;
+$primary-color-dark: darken($primary-color, 10%);
+
+// texts colors
+$h1-color: $black;
+$highlight-text-color: $primary-color;
+$link-color: $yellow;
+$text-color: $gray-light;

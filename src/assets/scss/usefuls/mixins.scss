@@ -1,0 +1,51 @@
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin noText {
+    display: inline-block;
+    text-align: left;
+    text-indent: -999em;
+}
+
+@mixin goToTheCenter($space) {
+    display: block;
+    margin: $space auto;
+}
+
+@mixin titleLine ($color, $marginSide) {
+    &:after {
+        @include size(40px, 2px);
+        background: $color;
+        content: "";
+        display: block;
+        margin: 15px $marginSide;
+    }
+}
+
+@mixin btn($background, $color, $width) {
+    background: $background;
+    border: none;
+    box-shadow: 0px 0px 0 darken($primary-color, 20%) inset;
+    border-radius: 50px;
+    color: $color;
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all .5s;
+    width: $width;
+    &:hover {
+        box-shadow: 4px 4px 5px darken($background, 20%) inset;
+        transition: all .5s;
+        cursor: pointer;
+    }
+}
+
+@mixin animation() {
+    transition: all .5s;
+}

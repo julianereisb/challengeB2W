@@ -1,0 +1,66 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: url(../../images/stardust.png) repeat fixed $black;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	color: $text-color;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	color: $link-color;
+	font-style: italic;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.content {
+	@include goToTheCenter(0);
+}
+
+// HEADER
+header {
+	h1 {
+		@include noText	;
+		@include goToTheCenter(20px);
+		@include size(440px, 210px);
+		background: url(../../images/star-wars.png) no-repeat 0/100%;
+		position: relative;
+		span {
+			bottom: -30px;
+			font-size: 15px;
+			left: 0;
+			letter-spacing: 6px;
+			position: absolute;
+			text-align: center;
+			text-indent: 0;
+			text-transform: uppercase;
+			white-space: nowrap;
+			width: 100%;
+			strong {
+				color: $highlight-text-color;
+			}
+		}
+	}
+}
+
+//MEDIA QUERIES
+@media (min-width: 576px) { .content { max-width: 540px; }}
+@media (min-width: 768px) { .content { max-width: 720px; }}
+@media (min-width: 992px) { .content { max-width: 960px; }}
+@media (min-width: 1200px) { .content { max-width: 1140px; }}
