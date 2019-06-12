@@ -1,12 +1,17 @@
 // COLORS
 $black: #141414;
 $yellow: #D9B327;
+$yellowRGBA1: rgba(217, 179, 39, .1);
+$yellowRGBA2: rgba(217, 179, 39, .2);
 $off-black: #40404a;
 $gray-light: #EEEFF1;
 
 // GLOBAL VARIABLES
 $primary-color: $yellow;
+$primary-colorRGBA1 : $yellowRGBA1;
+$primary-colorRGBA2 : $yellowRGBA2;
 $primary-color-dark: darken($primary-color, 10%);
+$secondary-color: $black;
 
 // texts colors
 $h1-color: $black;
