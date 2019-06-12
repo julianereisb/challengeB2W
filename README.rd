@@ -1,5 +1,11 @@
-PARA INSTALAR:
-npm install
+*Lembrando que o Node.js é requerido
 
-PARA RODAR O PROJETO:
-npm start
+# Instalação
+```sh
+$./npm install
+```
+
+# Iniciar projeto
+```sh
+$ npm start
+```
